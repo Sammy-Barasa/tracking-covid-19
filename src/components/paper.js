@@ -9,9 +9,9 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignContent: "space-around",
     '& > *': {
-      margin: theme.spacing(1),
-      width: theme.spacing(16),
-      height: theme.spacing(16),
+      margin: theme.spacing(2),
+      width: theme.spacing(32),
+      height: theme.spacing(32),
     },
   },
 }));
