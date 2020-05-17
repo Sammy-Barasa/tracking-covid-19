@@ -36,7 +36,7 @@ const Paperdetail=({data: {confirmed,recovered, deaths,lastUpdate}})=>{
                             />
                             </Typography>
                             <Typography>
-                            {new Date(lastUpdate).toDateString()}
+                            Lastupdate: {new Date(lastUpdate).toDateString()}
                             </Typography>
                         </CardContent>
                     </Paper>
@@ -53,7 +53,7 @@ const Paperdetail=({data: {confirmed,recovered, deaths,lastUpdate}})=>{
                             />
                             </Typography>
                             <Typography>
-                            {new Date(lastUpdate).toDateString()}
+                            Lastupdate: {new Date(lastUpdate).toDateString()}
                             </Typography>
                         </CardContent>
                     </Paper>
@@ -70,7 +70,7 @@ const Paperdetail=({data: {confirmed,recovered, deaths,lastUpdate}})=>{
                             />
                             </Typography>
                             <Typography>
-                            {new Date(lastUpdate).toDateString()}
+                            Lastupdate: {new Date(lastUpdate).toDateString()}
                             </Typography>
                         </CardContent>
                     </Paper>
