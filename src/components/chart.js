@@ -38,7 +38,7 @@ const [globaldata,setGlobaldata]=useState([])
                     }
                 ]
             }}
-            width={500}
+            width={600}
             height={300}
             legend={ {display: false} }
             options={{
@@ -73,16 +73,20 @@ const [globaldata,setGlobaldata]=useState([])
             options={{ maintainAspectRatio: false }}
         />: null
     )
+    const style={width:"75%"}
+    const divStyle= {
+        display: "flex",
+        justifyContent: "center",
+        marginTop:"20px"
+      }
     
     return(
         
-            <div>
-                <Grid container spacing={3} justify="center">
-                    <Grid>
-                        <Paper elevation={6}  variant="elevation" >
-    {country? barChart : lineChart}
-                        </Paper> 
-                    </Grid>
+            <div style={divStyle}>
+                <Grid container justify="center" alignItems="center">
+                    <Paper elevation={6}  variant="elevation" style={style} xs={12} md={3} >
+                        {country? barChart : lineChart}
+                    </Paper> 
                 </Grid>
             </div>
         )
