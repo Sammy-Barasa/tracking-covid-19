@@ -18,7 +18,7 @@ const AllCountries =({handleChange}) =>{
         countries.length!==0?
         
             <Grid container  justify="center" alignItems="center">
-                <Grid item xs={12} sm={6} md={3}>
+                <Grid item >
                     <FormControl className={'FormControl'}>
                         <InputLabel htmlFor='CountryChosen'>Country</InputLabel>
                         <NativeSelect value="" onChange={(e) => handleChange(e.target.value)}>
