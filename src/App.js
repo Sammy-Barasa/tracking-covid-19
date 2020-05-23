@@ -52,7 +52,7 @@ class App extends Component {
     const data= this.state.data
     console.log(data)
     const imgStyle={
-      width:"50%",
+      width:"80%",
       marginBottom:"10px",
       display:"block",
       marginLeft:"auto",
