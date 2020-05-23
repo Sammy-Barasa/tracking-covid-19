@@ -8,17 +8,17 @@ import CountUp from 'react-countup';
 const Paperdetail=({data: {confirmed,recovered, deaths,lastUpdate}})=>{
   const style={
     recovered:{
-      width:"80%",
+      width:"90%",
       borderBottom:"2px solid rgba(0, 255, 0, 0.5)",
       borderTop:"2px solid rgba(0, 255, 0, 0.5)"
     },
     infected:{
-      width:"80%",
+      width:"90%",
       borderBottom:"2px solid rgba(0, 0, 255, 0.5)",
       borderTop:"2px solid rgba(0, 0, 255, 0.5)"
     },
     deaths:{
-      width:"80%",
+      width:"90%",
       borderBottom:"2px solid rgba(255, 0, 0, 0.5)",
       borderTop:"2px solid rgba(255, 0, 0, 0.5)"
     }
