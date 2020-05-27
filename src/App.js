@@ -53,7 +53,7 @@ class App extends Component {
     console.log(data)
     const imgStyle={
       width:"100%",
-      height:"50%",
+      height:"20%",
       marginBottom:"10px",
       display:"block",
       marginLeft:"auto",
