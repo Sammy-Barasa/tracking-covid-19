@@ -18,6 +18,7 @@ class App extends Component {
     this.state={
       country:"",
       data:{},
+      windowidth:window.innerWidth
     };
   }
   handleChange= async (nation)=>{
@@ -39,25 +40,32 @@ class App extends Component {
     const fetchedGlobal= await getDailyDataGlobal()
     this.setState({data:fetchedGlobal,country:""})
   }
+  
  
   async componentDidMount(){
-     this.globaldata()
+     this.globaldata();
     }
   componentDidUpdate(){
     const checkChoice= this.state.country
     console.log(checkChoice)
   }
+ 
   render() {
     const country= this.state.country
     const data= this.state.data
     console.log(data)
     const imgStyle={
       width:"100%",
-      height:"20%",
+      height:"50%",
       marginBottom:"10px",
       display:"block",
-      marginLeft:"auto",
-      marginRight:"auto"
+    }
+    const imgCenter={
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom:"10px",
+      width: "60%"
     }
     const divStyle={
       display:"flex",
@@ -68,7 +76,7 @@ class App extends Component {
     return (
     
               <div style={divStyle}>
-                <img  src={require('./images/banna1.jpg')} style={imgStyle} alt=""/>
+                <img  src={require('./images/banna1.jpg')} style={this.state.windowidth>700?imgCenter:imgStyle} alt=""/>
                 <Paperdetail data={data}/>
                 <AllCountries handleChange={this.handleChange}/>
                 <Graphs country={country} data={data}/>
