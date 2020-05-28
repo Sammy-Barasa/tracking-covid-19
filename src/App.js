@@ -40,14 +40,20 @@ class App extends Component {
     const fetchedGlobal= await getDailyDataGlobal()
     this.setState({data:fetchedGlobal,country:""})
   }
-  
+  handleResize=()=>{
+    this.setState({ windowidth: window.innerWidth });
+  }
  
   async componentDidMount(){
      this.globaldata();
+     window.addEventListener('resize', this.handleResize);
     }
   componentDidUpdate(){
     const checkChoice= this.state.country
     console.log(checkChoice)
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
   }
  
   render() {
