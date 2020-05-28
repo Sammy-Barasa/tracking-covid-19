@@ -5,6 +5,6 @@
   
   <h6>The API used was: https://covid19.mathdro.id/api</h6>
   
-  
+  <img  src='./src/images/coverImage.jpeg' alt=""/>
   
   <h1><a href="https://tracking-covid-19-pandemic.netlify.app/">Live site!</a></h1>
